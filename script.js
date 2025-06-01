@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutBtnInlineButton = document.getElementById('checkout-btn-inline');
     const qrCodeContainerInlineDiv = document.getElementById('qr-code-container-inline');
 
-    let cart = JSON.parse(localStorage.getItem('kantinKuLandingPageCartV2')) || {}; // Ganti key localStorage jika perlu
+    let cart = JSON.parse(localStorage.getItem('kantinKuLandingPageCartV2')) || {};
     let originalStocks = {}; 
 
     document.querySelectorAll('.add-to-cart-btn').forEach(button => {
@@ -108,8 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (qrCodeContainerInlineDiv) {
-                qrCodeContainerInlineDiv.classList.remove('d-none'); // Tampilkan QR Code statis
-                // TIDAK ADA ALERT DI SINI LAGI
+                qrCodeContainerInlineDiv.classList.remove('d-none');
             }
             
         });
