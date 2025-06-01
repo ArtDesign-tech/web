@@ -38,7 +38,7 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
     </div>
 </nav>
 
-<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5">Tentang Kantin Kami</h2></div>
+<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5">About Kantin</h2></div>
     <div class="row align-items-center">
         <div class="col-lg-6"><h3 class="text-primary">Selamat Datang!</h3><p class="lead">di Kantin <b>SMK TELKOM JAKARTA!</b> Kantin kami menyediakan berbagai pilihan makanan dan minuman sehat untuk mendukung aktivitas belajar siswa. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen memberikan yang terbaik untuk seluruh warga sekolah.</p></div>
         <div class="col-lg-6">
@@ -52,7 +52,7 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
     </div>
 </section>
 <hr class="my-5"> <section id="cafetaria" class="bg-body-tertiary py-5"> <div class="container">
-        <div class="text-center"><h2 class="mb-5 display-5">Daftar Cafetaria</h2></div>
+        <div class="text-center"><h2 class="mb-5 display-5">Cafetaria List</h2></div>
 
         <div id="kantin-ceria-lezat" class="mb-5 p-4 rounded shadow-sm bg-white">
             <h3 class="text-success mb-3 border-bottom pb-2">Kantin Ceria lezat</h3>
@@ -263,7 +263,6 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
 
 <section id="how-to-buy" class="container py-5"> <div class="text-center">
         <h2 class="mb-3 display-5">How to buy</h2>
-        <p class="lead mb-5">Pilih menu, tambahkan ke keranjang, lalu klik "Bayar Sekarang" untuk QR Code.</p>
     </div>
     <?php
     $item_offset_howtobuy = 0;
