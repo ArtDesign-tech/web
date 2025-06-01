@@ -1,5 +1,5 @@
 <?php
-require_once 'config_simple.php';
+require_once 'config.php';
 $all_barang_items = getAllBarang($conn);
 session_start();
 
