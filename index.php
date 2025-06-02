@@ -21,7 +21,7 @@ $item_per_kantin_display = 4;
     </head>
 <body style="padding-top: 56px;"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Kantin-Telkom</a>
+        <a class="navbar-brand fw-bold text-danger" href="#">Kantin-Telkom</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMain">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,9 +36,9 @@ $item_per_kantin_display = 4;
     </div>
 </nav>
 
-<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5">About Kantin</h2></div>
+<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5 fw-medium">About Kantin</h2></div>
     <div class="row align-items-center">
-        <div class="col-lg-6"><h3 class="text-primary">Selamat Datang!</h3><p class="lead">di Kantin <b>SMK TELKOM JAKARTA!</b> Kantin kami menyediakan berbagai pilihan makanan dan minuman sehat untuk mendukung aktivitas belajar siswa. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen memberikan yang terbaik untuk seluruh warga sekolah.</p></div>
+        <div class="col-lg-6"><h3 class="text-danger">Selamat Datang!</h3><p class="lead">di Kantin <b>SMK TELKOM JAKARTA!</b> Kantin kami menyediakan berbagai pilihan makanan dan minuman sehat untuk mendukung aktivitas belajar siswa. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen memberikan yang terbaik untuk seluruh warga sekolah.</p></div>
         <div class="col-lg-6">
             <div class="mb-3 rounded bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin1.jpg" alt="Foto Kantin Sekolah" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 300px;">
@@ -50,10 +50,10 @@ $item_per_kantin_display = 4;
     </div>
 </section>
 <hr class="my-5"> <section id="cafetaria" class="bg-body-tertiary py-5"> <div class="container">
-        <div class="text-center"><h2 class="mb-5 display-5">Cafetaria List</h2></div>
+        <div class="text-center"><h2 class="mb-5 display-5 fw-medium">Cafetaria List</h2></div>
 
         <div id="kantin-ceria-lezat" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-success mb-3 border-bottom pb-2">Kantin Ceria lezat</h3>
+            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Ceria lezat</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin1.jpg" alt="Kantin Ceria Lezat" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -104,7 +104,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-sehat-alami" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-success mb-3 border-bottom pb-2">Kantin Sehat Alami</h3>
+            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Sehat Alami</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin2.jpg" alt="Kantin Sehat Alami" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -155,7 +155,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-kenyang-mantap" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-success mb-3 border-bottom pb-2">Kantin Kenyang Mantap</h3>
+            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Kenyang Mantap</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin3.jpg" alt="Kantin Kenyang Mantap" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -206,7 +206,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-minuman-segar-jaya" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-success mb-3 border-bottom pb-2">Kantin Minuman Segar Jaya</h3>
+            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Minuman Segar Jaya</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin4.jpg" alt="Kantin Minuman Segar Jaya" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -260,7 +260,7 @@ $item_per_kantin_display = 4;
 
 
 <section id="how-to-buy" class="container py-5"> <div class="text-center">
-        <h2 class="mb-3 display-5">How to buy</h2>
+        <h2 class="mb-3 display-5 fw-medium">How to buy</h2>
     </div>
     <?php
     $item_offset_howtobuy = 0;
@@ -270,7 +270,7 @@ $item_per_kantin_display = 4;
     foreach ($nama_kantin_hardcode as $nama_kantin_display):
     ?>
         <div class="mb-5">
-            <h3 class="text-primary mb-3 border-bottom pb-2"><?php echo htmlspecialchars($nama_kantin_display); ?></h3>
+            <h3 class="text-dark mb-3 border-bottom pb-2"><?php echo htmlspecialchars($nama_kantin_display); ?></h3>
             <div class="row g-4">
             <?php
             $menu_di_kantin_harga = array_slice($all_barang_items, $item_offset_howtobuy, $item_per_kantin_display);
@@ -281,10 +281,10 @@ $item_per_kantin_display = 4;
                 <div class="card menu-item-card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><?php echo htmlspecialchars($menu_item['nama_barang']); ?></h5>
-                        <p class="card-text fw-bold text-success fs-5">Rp <?php echo number_format($menu_item['harga_barang'], 0, ',', '.'); ?></p>
+                        <p class="card-text fw-bold text-danger fs-5">Rp <?php echo number_format($menu_item['harga_barang'], 0, ',', '.'); ?></p>
                         <p class="card-text"><small class="text-muted">Stok: <span class="stok-display" id="stok-<?php echo $menu_item['barang_id']; ?>"><?php echo $menu_item['stok_barang']; ?></span></small></p>
-                        <button class="btn btn-primary mt-auto add-to-cart-btn" data-id="<?php echo $menu_item['barang_id']; ?>" data-name="<?php echo htmlspecialchars($menu_item['nama_barang']); ?>" data-price="<?php echo $menu_item['harga_barang']; ?>" data-stok-asli="<?php echo $menu_item['stok_barang']; ?>" <?php echo ($menu_item['stok_barang'] <= 0) ? 'disabled' : ''; ?>>
-                            <i class="fas fa-cart-plus"></i> Tambah
+                        <button class="btn btn-danger mt-auto add-to-cart-btn" data-id="<?php echo $menu_item['barang_id']; ?>" data-name="<?php echo htmlspecialchars($menu_item['nama_barang']); ?>" data-price="<?php echo $menu_item['harga_barang']; ?>" data-stok-asli="<?php echo $menu_item['stok_barang']; ?>" <?php echo ($menu_item['stok_barang'] <= 0) ? 'disabled' : ''; ?>>
+                            Tambah
                         </button>
                     </div>
                 </div>
@@ -332,7 +332,7 @@ $item_per_kantin_display = 4;
 </section>
 <hr class="my-5"> <section id="contact" class="bg-body-tertiary py-5"> <div class="container">
         <div class="text-center">
-            <h2 class="mb-4 display-5">Hubungi Kami</h2>
+            <h2 class="mb-4 display-5 fw-medium">Hubungi Kami</h2>
         </div>
         <?php if (isset($_SESSION['notification'])): ?>
             <div class="alert alert-info text-center col-md-8 col-lg-6 mx-auto">
