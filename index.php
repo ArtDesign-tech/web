@@ -21,7 +21,7 @@ $item_per_kantin_display = 4;
     </head>
 <body style="padding-top: 56px;"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#"><i class="fas fa-utensils"></i> Info Kantin Sekolah</a>
+        <a class="navbar-brand fw-bold" href="#">Kantin-Telkom</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMain">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -338,7 +338,7 @@ $item_per_kantin_display = 4;
             <div class="alert alert-info text-center col-md-8 col-lg-6 mx-auto">
                 <?php echo $_SESSION['notification']; unset($_SESSION['notification']); ?>
             </div><?php endif; ?>
-        <form action="submit_simple.php" method="POST" class="col-md-8 col-lg-6 mx-auto">
+        <form action="submit.php" method="POST" class="col-md-8 col-lg-6 mx-auto">
             <div class="mb-3">
                 <label for="nama" class="form-label fw-medium">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" required placeholder="Nama lengkap">
@@ -358,7 +358,7 @@ $item_per_kantin_display = 4;
     </div>
 </section>
 
-<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold">Iqbal Husni Saleem</span></p>
+<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold">Evan kurnia</span></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
