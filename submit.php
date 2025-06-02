@@ -18,6 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-header('Location: index_simple.php#contact');
+header('Location: index.php#contact');
 exit;
 ?>
