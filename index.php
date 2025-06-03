@@ -358,7 +358,7 @@ $item_per_kantin_display = 4;
     </div>
 </section>
 
-<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold">Evan kurnia</span></p>
+<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold"></span></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
