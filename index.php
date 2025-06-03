@@ -3,13 +3,14 @@ require_once 'config.php';
 $all_barang_items = getAllBarang($conn);
 session_start();
 
+// Definisikan nama-nama kantin secara manual
 $nama_kantin_hardcode = [
     'Kantin Ceria Lezat',
     'Warung Sehat Alami',
     'Pojok Kenyang Mantap',
     'Kedai Minuman Segar Jaya'
 ];
-$item_per_kantin_display = 4; 
+$item_per_kantin_display = 4; // Jumlah item per kantin untuk display
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -18,10 +19,11 @@ $item_per_kantin_display = 4;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kantin Sekolah</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> -->
     </head>
 <body style="padding-top: 56px;"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold text-danger" href="#">Kantin-Telkom</a>
+        <a class="navbar-brand fw-bold" href="#">Kantin Sekolah</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMain">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,9 +38,9 @@ $item_per_kantin_display = 4;
     </div>
 </nav>
 
-<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5 fw-medium">About Kantin</h2></div>
+<section id="about" class="container py-5"> <div class="text-center"><h2 class="mb-4 display-5 fw-semibold">About kantin</h2></div>
     <div class="row align-items-center">
-        <div class="col-lg-6"><h3 class="text-danger">Selamat Datang!</h3><p class="lead">di Kantin <b>SMK TELKOM JAKARTA!</b> Kantin kami menyediakan berbagai pilihan makanan dan minuman sehat untuk mendukung aktivitas belajar siswa. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen memberikan yang terbaik untuk seluruh warga sekolah.</p></div>
+        <div class="col-lg-6"><h3 class="text-success">Selamat Datang!</h3><p class="lead">di Kantin <b>SMK TELKOM JAKARTA!</b> Kantin kami menyediakan berbagai pilihan makanan dan minuman sehat untuk mendukung aktivitas belajar siswa. Dengan suasana yang nyaman dan pelayanan ramah, kami berkomitmen memberikan yang terbaik untuk seluruh warga sekolah.</p></div>
         <div class="col-lg-6">
             <div class="mb-3 rounded bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin1.jpg" alt="Foto Kantin Sekolah" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 300px;">
@@ -50,10 +52,10 @@ $item_per_kantin_display = 4;
     </div>
 </section>
 <hr class="my-5"> <section id="cafetaria" class="bg-body-tertiary py-5"> <div class="container">
-        <div class="text-center"><h2 class="mb-5 display-5 fw-medium">Cafetaria List</h2></div>
+        <div class="text-center"><h2 class="mb-5 display-5 fw-semibold">Cafetaria list</h2></div>
 
         <div id="kantin-ceria-lezat" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Ceria lezat</h3>
+            <h3 class="text-danger mb-3 border-bottom pb-2">Kantin Ceria lezat</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin1.jpg" alt="Kantin Ceria Lezat" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -104,7 +106,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-sehat-alami" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Sehat Alami</h3>
+            <h3 class="text-danger mb-3 border-bottom pb-2">Kantin Sehat Alami</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin2.jpg" alt="Kantin Sehat Alami" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -155,7 +157,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-kenyang-mantap" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Kenyang Mantap</h3>
+            <h3 class="text-danger mb-3 border-bottom pb-2">Kantin Kenyang Mantap</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin3.jpg" alt="Kantin Kenyang Mantap" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -206,7 +208,7 @@ $item_per_kantin_display = 4;
         </div>
 
         <div id="kantin-minuman-segar-jaya" class="mb-5 p-4 rounded shadow-sm bg-white">
-            <h3 class="text-dark mb-3 border-bottom pb-2">Kantin Minuman Segar Jaya</h3>
+            <h3 class="text-danger mb-3 border-bottom pb-2">Kantin Minuman Segar Jaya</h3>
             <div class="rounded mb-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
                 <img src="./image/kantin4.jpg" alt="Kantin Minuman Segar Jaya" class="img-fluid rounded w-100" style="object-fit: cover; max-height: 350px;">
             </div>
@@ -260,12 +262,14 @@ $item_per_kantin_display = 4;
 
 
 <section id="how-to-buy" class="container py-5"> <div class="text-center">
-        <h2 class="mb-3 display-5 fw-medium">How to buy</h2>
+        <h2 class="mb-3 display-5 fw-semibold">How to buy</h2>
+        <p class="lead mb-5">Pilih menu, tambahkan ke keranjang, lalu klik "Bayar Sekarang" untuk QR Code.</p>
     </div>
     <?php
     $item_offset_howtobuy = 0;
+    // Ensure $all_barang_items is an array before slicing
     if (!is_array($all_barang_items)) {
-        $all_barang_items = [];
+        $all_barang_items = []; // Initialize as empty array if not already an array
     }
     foreach ($nama_kantin_hardcode as $nama_kantin_display):
     ?>
@@ -283,8 +287,8 @@ $item_per_kantin_display = 4;
                         <h5 class="card-title"><?php echo htmlspecialchars($menu_item['nama_barang']); ?></h5>
                         <p class="card-text fw-bold text-danger fs-5">Rp <?php echo number_format($menu_item['harga_barang'], 0, ',', '.'); ?></p>
                         <p class="card-text"><small class="text-muted">Stok: <span class="stok-display" id="stok-<?php echo $menu_item['barang_id']; ?>"><?php echo $menu_item['stok_barang']; ?></span></small></p>
-                        <button class="btn btn-danger mt-auto add-to-cart-btn" data-id="<?php echo $menu_item['barang_id']; ?>" data-name="<?php echo htmlspecialchars($menu_item['nama_barang']); ?>" data-price="<?php echo $menu_item['harga_barang']; ?>" data-stok-asli="<?php echo $menu_item['stok_barang']; ?>" <?php echo ($menu_item['stok_barang'] <= 0) ? 'disabled' : ''; ?>>
-                            Tambah
+                        <button class="btn btn-warning mt-auto add-to-cart-btn" data-id="<?php echo $menu_item['barang_id']; ?>" data-name="<?php echo htmlspecialchars($menu_item['nama_barang']); ?>" data-price="<?php echo $menu_item['harga_barang']; ?>" data-stok-asli="<?php echo $menu_item['stok_barang']; ?>" <?php echo ($menu_item['stok_barang'] <= 0) ? 'disabled' : ''; ?>>
+                         Tambah
                         </button>
                     </div>
                 </div>
@@ -312,9 +316,9 @@ $item_per_kantin_display = 4;
                 <hr>
                 <div class="d-flex justify-content-between align-items-center fs-4 fw-bold my-3">
                     <span>Total Harga:</span>
-                    <span id="total-price-inline" class="text-danger">Rp 0</span>
+                    <span id="total-price-inline" class="text-dark">Rp 0</span>
                 </div>
-                <button id="checkout-btn-inline" class="btn btn-danger btn-lg w-100" disabled>
+                <button id="checkout-btn-inline" class="btn btn-warning btn-lg w-100" disabled>
                     Bayar Sekarang
                 </button>
             </div>
@@ -323,7 +327,6 @@ $item_per_kantin_display = 4;
                 <div id="qr-code-container-inline" class="d-none p-3 border rounded bg-white shadow-sm h-100 text-center">
                     <h5 class="mb-3">Scan QR Code Ini (Dummy):</h5>
                     <img src="./image/dummy_qr.png" alt="Dummy QR Code Pembayaran" id="qr-code-img-inline" class="img-fluid d-block mx-auto rounded" style="max-width: 200px;">
-                    <p class="text-muted mt-2 small">Ini adalah simulasi pembayaran.</p>
                 </div>
             </div>
         </div>
@@ -332,7 +335,7 @@ $item_per_kantin_display = 4;
 </section>
 <hr class="my-5"> <section id="contact" class="bg-body-tertiary py-5"> <div class="container">
         <div class="text-center">
-            <h2 class="mb-4 display-5 fw-medium">Hubungi Kami</h2>
+            <h2 class="mb-4 display-5 fw-semibold">Contact me</h2>
         </div>
         <?php if (isset($_SESSION['notification'])): ?>
             <div class="alert alert-info text-center col-md-8 col-lg-6 mx-auto">
@@ -352,13 +355,13 @@ $item_per_kantin_display = 4;
                 <textarea class="form-control" id="pesan" name="pesan" rows="5" required placeholder="Pesan Anda..."></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-dark btn-lg px-5">Kirim</button>
+                <button type="submit" class="btn btn-warning btn-lg px-5">Kirim</button>
             </div>
         </form>
     </div>
 </section>
 
-<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold"></span></p>
+<footer class="text-center py-4 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold">Adha Ibrahim</span></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
